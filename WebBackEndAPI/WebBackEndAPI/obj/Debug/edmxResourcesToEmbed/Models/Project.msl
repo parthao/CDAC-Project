@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectModelStoreContainer" CdmEntityContainer="ProjectEntities3">
+    <EntitySetMapping Name="aution_table">
+      <EntityTypeMapping TypeName="ProjectModel.aution_table">
+        <MappingFragment StoreEntitySet="aution_table">
+          <ScalarProperty Name="auc_id" ColumnName="auc_id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="product_p_id" ColumnName="product_p_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bid_table">
+      <EntityTypeMapping TypeName="ProjectModel.bid_table">
+        <MappingFragment StoreEntitySet="bid_table">
+          <ScalarProperty Name="bid_id" ColumnName="bid_id" />
+          <ScalarProperty Name="usr_id" ColumnName="usr_id" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="user_bid_price" ColumnName="user_bid_price" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="ProjectModel.product">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="p_descp" ColumnName="p_descp" />
+          <ScalarProperty Name="p_size" ColumnName="p_size" />
+          <ScalarProperty Name="p_weight" ColumnName="p_weight" />
+          <ScalarProperty Name="p_material" ColumnName="p_material" />
+          <ScalarProperty Name="p_imgloc" ColumnName="p_imgloc" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="p_category" ColumnName="p_category" />
+          <ScalarProperty Name="usr_id" ColumnName="usr_id" />
+          <ScalarProperty Name="base_price" ColumnName="base_price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_db">
+      <EntityTypeMapping TypeName="ProjectModel.user_db">
+        <MappingFragment StoreEntitySet="user_db">
+          <ScalarProperty Name="usr_id" ColumnName="usr_id" />
+          <ScalarProperty Name="f_name" ColumnName="f_name" />
+          <ScalarProperty Name="l_name" ColumnName="l_name" />
+          <ScalarProperty Name="pass_w" ColumnName="pass_w" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="usraddress" ColumnName="usraddress" />
+          <ScalarProperty Name="pincode" ColumnName="pincode" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="statex" ColumnName="statex" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="created_At" ColumnName="created_At" />
+          <ScalarProperty Name="x" ColumnName="x" />
+          <ScalarProperty Name="y" ColumnName="y" />
+          <ScalarProperty Name="z" ColumnName="z" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Bidding" FunctionName="ProjectModel.Store.Bidding">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProjectModel.Bidding_Result">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="high_bid" ColumnName="high_bid" />
+          <ScalarProperty Name="base_price" ColumnName="base_price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

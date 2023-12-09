@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="aution_table">
+    <Key>
+      <PropertyRef Name="auc_id" />
+    </Key>
+    <Property Name="auc_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="start_date" Type="date" />
+    <Property Name="end_date" Type="date" />
+    <Property Name="create_time" Type="datetime" />
+    <Property Name="product_p_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bid_table">
+    <Key>
+      <PropertyRef Name="bid_id" />
+    </Key>
+    <Property Name="bid_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usr_id" Type="int" Nullable="false" />
+    <Property Name="p_id" Type="int" />
+    <Property Name="user_bid_price" Type="int" />
+    <Property Name="create_time" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="p_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="p_name" Type="varchar" MaxLength="100" />
+    <Property Name="p_descp" Type="varchar" MaxLength="1000" />
+    <Property Name="p_size" Type="float" />
+    <Property Name="p_weight" Type="float" />
+    <Property Name="p_material" Type="varchar" MaxLength="15" />
+    <Property Name="p_imgloc" Type="varchar" MaxLength="1000" />
+    <Property Name="create_time" Type="datetime" />
+    <Property Name="p_category" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="usr_id" Type="int" />
+    <Property Name="base_price" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user_db">
+    <Key>
+      <PropertyRef Name="usr_id" />
+    </Key>
+    <Property Name="usr_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="f_name" Type="varchar" MaxLength="50" />
+    <Property Name="l_name" Type="varchar" MaxLength="50" />
+    <Property Name="pass_w" Type="varchar" MaxLength="255" />
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="mobile" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="usraddress" Type="varchar" MaxLength="100" />
+    <Property Name="pincode" Type="int" />
+    <Property Name="city" Type="varchar" MaxLength="150" />
+    <Property Name="statex" Type="varchar" MaxLength="150" />
+    <Property Name="country" Type="varchar" MaxLength="15" />
+    <Property Name="created_At" Type="datetime" />
+    <Property Name="x" Type="varchar" MaxLength="255" />
+    <Property Name="y" Type="varchar" MaxLength="255" />
+    <Property Name="z" Type="varchar" MaxLength="255" />
+    <Property Name="type" Type="char" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <Association Name="bid_table_ibfk_1">
+    <End Role="user_db" Type="Self.user_db" Multiplicity="1" />
+    <End Role="bid_table" Type="Self.bid_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_db">
+        <PropertyRef Name="usr_id" />
+      </Principal>
+      <Dependent Role="bid_table">
+        <PropertyRef Name="usr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bid_table_ibfk_2">
+    <End Role="products" Type="Self.products" Multiplicity="0..1" />
+    <End Role="bid_table" Type="Self.bid_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="bid_table">
+        <PropertyRef Name="p_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_aution_tableproduct">
+    <End Role="products" Type="Self.products" Multiplicity="1" />
+    <End Role="aution_table" Type="Self.aution_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="aution_table">
+        <PropertyRef Name="product_p_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_product_ibfk_1">
+    <End Role="user_db" Type="Self.user_db" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products" Type="Self.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_db">
+        <PropertyRef Name="usr_id" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="usr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Bidding" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProdID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="ProjectModelStoreContainer">
+    <EntitySet Name="aution_table" EntityType="Self.aution_table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bid_table" EntityType="Self.bid_table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="products" EntityType="Self.products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="user_db" EntityType="Self.user_db" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="bid_table_ibfk_1" Association="Self.bid_table_ibfk_1">
+      <End Role="user_db" EntitySet="user_db" />
+      <End Role="bid_table" EntitySet="bid_table" />
+    </AssociationSet>
+    <AssociationSet Name="bid_table_ibfk_2" Association="Self.bid_table_ibfk_2">
+      <End Role="products" EntitySet="products" />
+      <End Role="bid_table" EntitySet="bid_table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_aution_tableproduct" Association="Self.FK_aution_tableproduct">
+      <End Role="products" EntitySet="products" />
+      <End Role="aution_table" EntitySet="aution_table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_product_ibfk_1" Association="Self.FK_product_ibfk_1">
+      <End Role="user_db" EntitySet="user_db" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

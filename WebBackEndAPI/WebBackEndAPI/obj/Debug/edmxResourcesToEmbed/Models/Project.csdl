@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="aution_table">
+    <Key>
+      <PropertyRef Name="auc_id" />
+    </Key>
+    <Property Name="auc_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="start_date" Type="DateTime" Precision="0" />
+    <Property Name="end_date" Type="DateTime" Precision="0" />
+    <Property Name="create_time" Type="DateTime" Precision="3" />
+    <Property Name="product_p_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="product" Relationship="Self.FK_aution_tableproduct" FromRole="aution_table" ToRole="products" />
+  </EntityType>
+  <EntityType Name="bid_table">
+    <Key>
+      <PropertyRef Name="bid_id" />
+    </Key>
+    <Property Name="bid_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="usr_id" Type="Int32" Nullable="false" />
+    <Property Name="p_id" Type="Int32" />
+    <Property Name="user_bid_price" Type="Int32" />
+    <Property Name="create_time" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="user_db" Relationship="Self.bid_table_ibfk_1" FromRole="bid_table" ToRole="user_db" />
+    <NavigationProperty Name="product" Relationship="Self.bid_table_ibfk_2" FromRole="bid_table" ToRole="products" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="p_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="p_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="p_descp" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="p_size" Type="Double" />
+    <Property Name="p_weight" Type="Double" />
+    <Property Name="p_material" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="p_imgloc" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="create_time" Type="DateTime" Precision="3" />
+    <Property Name="p_category" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="usr_id" Type="Int32" />
+    <Property Name="base_price" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="aution_table" Relationship="Self.FK_aution_tableproduct" FromRole="products" ToRole="aution_table" />
+    <NavigationProperty Name="bid_table" Relationship="Self.bid_table_ibfk_2" FromRole="products" ToRole="bid_table" />
+    <NavigationProperty Name="user_db" Relationship="Self.FK_product_ibfk_1" FromRole="products" ToRole="user_db" />
+  </EntityType>
+  <EntityType Name="user_db">
+    <Key>
+      <PropertyRef Name="usr_id" />
+    </Key>
+    <Property Name="usr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="f_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="l_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pass_w" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mobile" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usraddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="pincode" Type="Int32" />
+    <Property Name="city" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="statex" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="country" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="created_At" Type="DateTime" Precision="3" />
+    <Property Name="x" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="y" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="z" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="bid_table" Relationship="Self.bid_table_ibfk_1" FromRole="user_db" ToRole="bid_table" />
+    <NavigationProperty Name="products" Relationship="Self.FK_product_ibfk_1" FromRole="user_db" ToRole="products" />
+  </EntityType>
+  <Association Name="FK_aution_tableproduct">
+    <End Role="products" Type="Self.product" Multiplicity="1" />
+    <End Role="aution_table" Type="Self.aution_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="aution_table">
+        <PropertyRef Name="product_p_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bid_table_ibfk_1">
+    <End Role="user_db" Type="Self.user_db" Multiplicity="1" />
+    <End Role="bid_table" Type="Self.bid_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_db">
+        <PropertyRef Name="usr_id" />
+      </Principal>
+      <Dependent Role="bid_table">
+        <PropertyRef Name="usr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bid_table_ibfk_2">
+    <End Role="products" Type="Self.product" Multiplicity="0..1" />
+    <End Role="bid_table" Type="Self.bid_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="bid_table">
+        <PropertyRef Name="p_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_product_ibfk_1">
+    <End Role="user_db" Type="Self.user_db" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products" Type="Self.product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_db">
+        <PropertyRef Name="usr_id" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="usr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProjectEntities3" annotation:LazyLoadingEnabled="false">
+    <EntitySet Name="aution_table" EntityType="Self.aution_table" />
+    <EntitySet Name="bid_table" EntityType="Self.bid_table" />
+    <EntitySet Name="products" EntityType="Self.product" />
+    <EntitySet Name="user_db" EntityType="Self.user_db" />
+    <AssociationSet Name="FK_aution_tableproduct" Association="Self.FK_aution_tableproduct">
+      <End Role="products" EntitySet="products" />
+      <End Role="aution_table" EntitySet="aution_table" />
+    </AssociationSet>
+    <AssociationSet Name="bid_table_ibfk_1" Association="Self.bid_table_ibfk_1">
+      <End Role="user_db" EntitySet="user_db" />
+      <End Role="bid_table" EntitySet="bid_table" />
+    </AssociationSet>
+    <AssociationSet Name="bid_table_ibfk_2" Association="Self.bid_table_ibfk_2">
+      <End Role="products" EntitySet="products" />
+      <End Role="bid_table" EntitySet="bid_table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_product_ibfk_1" Association="Self.FK_product_ibfk_1">
+      <End Role="user_db" EntitySet="user_db" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+    <FunctionImport Name="Bidding" ReturnType="Collection(ProjectModel.Bidding_Result)">
+      <Parameter Name="ProdID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="Bidding_Result">
+    <Property Type="Int32" Name="p_id" Nullable="false" />
+    <Property Type="Int32" Name="high_bid" Nullable="true" />
+    <Property Type="Int32" Name="base_price" Nullable="false" />
+  </ComplexType>
+</Schema>

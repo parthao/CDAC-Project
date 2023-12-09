@@ -1,0 +1,303 @@
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\ApplicationInsights.config
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\csc.exe
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\System.Collections.Immutable.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\vbc.exe
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\VBCSCompiler.exe
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\roslyn\VBCSCompiler.exe.config
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.dll.config
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.pdb
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.SqlServer.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Web.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.WindowsServer.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.ApplicationInsights.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Newtonsoft.Json.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Http.Formatting.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.WebHost.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.SqlServer.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Web.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.WindowsServer.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.ApplicationInsights.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\Newtonsoft.Json.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Http.Formatting.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.WebHost.xml
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.csprojResolveAssemblyReference.cache
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.pdb
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Cors.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.Cors.dll
+c:\users\drago\documents\visual studio 2015\Projects\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.Cors.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\ApplicationInsights.config
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\csc.exe
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\vbc.exe
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\VBCSCompiler.exe
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.dll.config
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.pdb
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.SqlServer.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Web.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.ApplicationInsights.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Newtonsoft.Json.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Swashbuckle.AspNetCore.Swagger.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Http.Formatting.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Cors.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.Cors.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.WebHost.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.SqlServer.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Web.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.ApplicationInsights.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Swashbuckle.AspNetCore.Swagger.pdb
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Swashbuckle.AspNetCore.Swagger.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Http.Formatting.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.Cors.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Newtonsoft.Json.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.WebHost.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.pdb
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.csprojResolveAssemblyReference.cache
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Logging.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Tokens.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Buffers.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Memory.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Numerics.Vectors.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Encodings.Web.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Json.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Tasks.Extensions.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.ValueTuple.dll
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Logging.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Tokens.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Buffers.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Memory.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Numerics.Vectors.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Encodings.Web.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Json.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Tasks.Extensions.xml
+C:\MyWork\WebBackEndAPI\WebBackEndAPI\bin\System.ValueTuple.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\ApplicationInsights.config
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\csc.exe
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\vbc.exe
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\VBCSCompiler.exe
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.dll.config
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\WebBackEndAPI.pdb
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.Win32.Primitives.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\netstandard.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.AppContext.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Collections.Concurrent.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Collections.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Collections.NonGeneric.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Collections.Specialized.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.ComponentModel.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.ComponentModel.EventBasedAsync.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.ComponentModel.Primitives.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.ComponentModel.TypeConverter.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Console.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Data.Common.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.Contracts.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.Debug.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.FileVersionInfo.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.Process.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.StackTrace.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.TextWriterTraceListener.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.Tools.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.TraceSource.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Diagnostics.Tracing.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Drawing.Primitives.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Dynamic.Runtime.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Globalization.Calendars.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Globalization.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Globalization.Extensions.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.Compression.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.Compression.ZipFile.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.FileSystem.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.FileSystem.DriveInfo.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.FileSystem.Primitives.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.FileSystem.Watcher.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.IsolatedStorage.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.MemoryMappedFiles.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.Pipes.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IO.UnmanagedMemoryStream.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Linq.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Linq.Expressions.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Linq.Parallel.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Linq.Queryable.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Http.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.NameResolution.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.NetworkInformation.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Ping.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Primitives.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Requests.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Security.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Sockets.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.WebHeaderCollection.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.WebSockets.Client.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.WebSockets.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.ObjectModel.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Reflection.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Reflection.Extensions.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Reflection.Primitives.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Resources.Reader.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Resources.ResourceManager.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Resources.Writer.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.CompilerServices.VisualC.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.Extensions.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.Handles.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.InteropServices.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.Numerics.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.Serialization.Formatters.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.Serialization.Json.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.Serialization.Primitives.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.Serialization.Xml.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Security.Claims.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Security.Cryptography.Algorithms.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Security.Cryptography.Csp.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Security.Cryptography.Encoding.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Security.Cryptography.Primitives.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Security.Cryptography.X509Certificates.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Security.Principal.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Security.SecureString.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Encoding.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Encoding.Extensions.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Text.RegularExpressions.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Overlapped.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Tasks.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Tasks.Parallel.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Thread.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.ThreadPool.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Timer.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Xml.ReaderWriter.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Xml.XDocument.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Xml.XmlDocument.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Xml.XmlSerializer.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Xml.XPath.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Xml.XPath.XDocument.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.SqlServer.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Web.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.ApplicationInsights.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Abstractions.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Logging.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Tokens.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Newtonsoft.Json.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Swashbuckle.AspNetCore.Swagger.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Buffers.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Memory.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Http.Formatting.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Numerics.Vectors.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Encodings.Web.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Json.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Tasks.Extensions.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.ValueTuple.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Cors.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.Cors.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.WebHost.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\EntityFramework.SqlServer.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.Web.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.ApplicationInsights.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Abstractions.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Logging.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Microsoft.IdentityModel.Tokens.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Swashbuckle.AspNetCore.Swagger.pdb
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Swashbuckle.AspNetCore.Swagger.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Buffers.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Memory.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Net.Http.Formatting.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Numerics.Vectors.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Encodings.Web.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Text.Json.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Threading.Tasks.Extensions.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.ValueTuple.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.Cors.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\Newtonsoft.Json.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\bin\System.Web.Http.WebHost.xml
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.csprojAssemblyReference.cache
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.csproj.CoreCompileInputs.cache
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.csproj.CopyComplete
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.dll
+D:\CDAC Project\Timeless-treasure-\WebBackEndAPI\WebBackEndAPI\obj\Debug\WebBackEndAPI.pdb

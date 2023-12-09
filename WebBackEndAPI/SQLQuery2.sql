@@ -1,0 +1,1 @@
+﻿select * from user_db where email='parthaohack@gmail.com';

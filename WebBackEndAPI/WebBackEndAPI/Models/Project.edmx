@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ProjectModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ProjectModelStoreContainer">
+    <EntitySet Name="aution_table" EntityType="ProjectModel.Store.aution_table" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bid_table" EntityType="ProjectModel.Store.bid_table" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="products" EntityType="ProjectModel.Store.products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="user_db" EntityType="ProjectModel.Store.user_db" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_aution_tableproduct" Association="ProjectModel.Store.FK_aution_tableproduct">
+      <End Role="products" EntitySet="products" />
+      <End Role="aution_table" EntitySet="aution_table" />
+    </AssociationSet>
+    <AssociationSet Name="bid_table_ibfk_1" Association="ProjectModel.Store.bid_table_ibfk_1">
+      <End Role="user_db" EntitySet="user_db" />
+      <End Role="bid_table" EntitySet="bid_table" />
+    </AssociationSet>
+    <AssociationSet Name="bid_table_ibfk_2" Association="ProjectModel.Store.bid_table_ibfk_2">
+      <End Role="products" EntitySet="products" />
+      <End Role="bid_table" EntitySet="bid_table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_product_ibfk_1" Association="ProjectModel.Store.FK_product_ibfk_1">
+      <End Role="user_db" EntitySet="user_db" />
+      <End Role="products" EntitySet="products" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aution_table">
+    <Key>
+      <PropertyRef Name="auc_id" />
+    </Key>
+    <Property Name="auc_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="start_date" Type="datetime" Nullable="true" />
+    <Property Name="end_date" Type="datetime" Nullable="true" />
+    <Property Name="create_time" Type="datetime" Nullable="true" />
+    <Property Name="product_p_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bid_table">
+    <Key>
+      <PropertyRef Name="bid_id" />
+    </Key>
+    <Property Name="bid_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usr_id" Type="int" Nullable="false" />
+    <Property Name="p_id" Type="int" Nullable="true" />
+    <Property Name="user_bid_price" Type="int" Nullable="true" />
+    <Property Name="create_time" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="p_id" />
+    </Key>
+    <Property Name="p_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="p_name" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="p_descp" Type="varchar" Nullable="true" MaxLength="1000" />
+    <Property Name="p_size" Type="float" Nullable="true" />
+    <Property Name="p_weight" Type="float" Nullable="true" />
+    <Property Name="p_material" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="p_imgloc" Type="varchar" Nullable="true" MaxLength="1000" />
+    <Property Name="create_time" Type="datetime" Nullable="true" />
+    <Property Name="p_category" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="usr_id" Type="int" Nullable="true" />
+    <Property Name="base_price" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user_db">
+    <Key>
+      <PropertyRef Name="usr_id" />
+    </Key>
+    <Property Name="usr_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="f_name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="l_name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="pass_w" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="mobile" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="usraddress" Type="varchar" Nullable="true" MaxLength="100" />
+    <Property Name="pincode" Type="int" Nullable="true" />
+    <Property Name="city" Type="varchar" Nullable="true" MaxLength="150" />
+    <Property Name="statex" Type="varchar" Nullable="true" MaxLength="150" />
+    <Property Name="country" Type="varchar" Nullable="true" MaxLength="15" />
+    <Property Name="created_At" Type="datetime" Nullable="true" />
+    <Property Name="x" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="y" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="z" Type="varchar" Nullable="true" MaxLength="255" />
+    <Property Name="type" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK_aution_tableproduct">
+    <End Role="products" Type="ProjectModel.Store.products" Multiplicity="1" />
+    <End Role="aution_table" Type="ProjectModel.Store.aution_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="aution_table">
+        <PropertyRef Name="product_p_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bid_table_ibfk_1">
+    <End Role="user_db" Type="ProjectModel.Store.user_db" Multiplicity="1" />
+    <End Role="bid_table" Type="ProjectModel.Store.bid_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_db">
+        <PropertyRef Name="usr_id" />
+      </Principal>
+      <Dependent Role="bid_table">
+        <PropertyRef Name="usr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bid_table_ibfk_2">
+    <End Role="products" Type="ProjectModel.Store.products" Multiplicity="0..1" />
+    <End Role="bid_table" Type="ProjectModel.Store.bid_table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="products">
+        <PropertyRef Name="p_id" />
+      </Principal>
+      <Dependent Role="bid_table">
+        <PropertyRef Name="p_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_product_ibfk_1">
+    <End Role="user_db" Type="ProjectModel.Store.user_db" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="products" Type="ProjectModel.Store.products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user_db">
+        <PropertyRef Name="usr_id" />
+      </Principal>
+      <Dependent Role="products">
+        <PropertyRef Name="usr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="aution_table">
+          <Key>
+            <PropertyRef Name="auc_id" />
+          </Key>
+          <Property Name="auc_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="start_date" Type="DateTime" Precision="0" />
+          <Property Name="end_date" Type="DateTime" Precision="0" />
+          <Property Name="create_time" Type="DateTime" Precision="3" />
+          <Property Name="product_p_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="product" Relationship="Self.FK_aution_tableproduct" FromRole="aution_table" ToRole="products" />
+        </EntityType>
+        <EntityType Name="bid_table">
+          <Key>
+            <PropertyRef Name="bid_id" />
+          </Key>
+          <Property Name="bid_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="usr_id" Type="Int32" Nullable="false" />
+          <Property Name="p_id" Type="Int32" />
+          <Property Name="user_bid_price" Type="Int32" />
+          <Property Name="create_time" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="user_db" Relationship="Self.bid_table_ibfk_1" FromRole="bid_table" ToRole="user_db" />
+          <NavigationProperty Name="product" Relationship="Self.bid_table_ibfk_2" FromRole="bid_table" ToRole="products" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="p_id" />
+          </Key>
+          <Property Name="p_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="p_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="p_descp" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="p_size" Type="Double" />
+          <Property Name="p_weight" Type="Double" />
+          <Property Name="p_material" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="p_imgloc" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="create_time" Type="DateTime" Precision="3" />
+          <Property Name="p_category" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="usr_id" Type="Int32" />
+          <Property Name="base_price" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="aution_table" Relationship="Self.FK_aution_tableproduct" FromRole="products" ToRole="aution_table" />
+          <NavigationProperty Name="bid_table" Relationship="Self.bid_table_ibfk_2" FromRole="products" ToRole="bid_table" />
+          <NavigationProperty Name="user_db" Relationship="Self.FK_product_ibfk_1" FromRole="products" ToRole="user_db" />
+        </EntityType>
+        <EntityType Name="user_db">
+          <Key>
+            <PropertyRef Name="usr_id" />
+          </Key>
+          <Property Name="usr_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="f_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="l_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="pass_w" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="mobile" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usraddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="pincode" Type="Int32" />
+          <Property Name="city" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="statex" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="country" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="created_At" Type="DateTime" Precision="3" />
+          <Property Name="x" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="y" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="z" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="bid_table" Relationship="Self.bid_table_ibfk_1" FromRole="user_db" ToRole="bid_table" />
+          <NavigationProperty Name="products" Relationship="Self.FK_product_ibfk_1" FromRole="user_db" ToRole="products" />
+        </EntityType>
+        <Association Name="FK_aution_tableproduct">
+          <End Role="products" Type="Self.product" Multiplicity="1" />
+          <End Role="aution_table" Type="Self.aution_table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="products">
+              <PropertyRef Name="p_id" />
+            </Principal>
+            <Dependent Role="aution_table">
+              <PropertyRef Name="product_p_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="bid_table_ibfk_1">
+          <End Role="user_db" Type="Self.user_db" Multiplicity="1" />
+          <End Role="bid_table" Type="Self.bid_table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user_db">
+              <PropertyRef Name="usr_id" />
+            </Principal>
+            <Dependent Role="bid_table">
+              <PropertyRef Name="usr_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="bid_table_ibfk_2">
+          <End Role="products" Type="Self.product" Multiplicity="0..1" />
+          <End Role="bid_table" Type="Self.bid_table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="products">
+              <PropertyRef Name="p_id" />
+            </Principal>
+            <Dependent Role="bid_table">
+              <PropertyRef Name="p_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_product_ibfk_1">
+          <End Role="user_db" Type="Self.user_db" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="products" Type="Self.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user_db">
+              <PropertyRef Name="usr_id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="usr_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ProjectEntities3" annotation:LazyLoadingEnabled="false">
+          <EntitySet Name="aution_table" EntityType="Self.aution_table" />
+          <EntitySet Name="bid_table" EntityType="Self.bid_table" />
+          <EntitySet Name="products" EntityType="Self.product" />
+          <EntitySet Name="user_db" EntityType="Self.user_db" />
+          <AssociationSet Name="FK_aution_tableproduct" Association="Self.FK_aution_tableproduct">
+            <End Role="products" EntitySet="products" />
+            <End Role="aution_table" EntitySet="aution_table" />
+          </AssociationSet>
+          <AssociationSet Name="bid_table_ibfk_1" Association="Self.bid_table_ibfk_1">
+            <End Role="user_db" EntitySet="user_db" />
+            <End Role="bid_table" EntitySet="bid_table" />
+          </AssociationSet>
+          <AssociationSet Name="bid_table_ibfk_2" Association="Self.bid_table_ibfk_2">
+            <End Role="products" EntitySet="products" />
+            <End Role="bid_table" EntitySet="bid_table" />
+          </AssociationSet>
+          <AssociationSet Name="FK_product_ibfk_1" Association="Self.FK_product_ibfk_1">
+            <End Role="user_db" EntitySet="user_db" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+          <FunctionImport Name="Bidding" ReturnType="Collection(ProjectModel.Bidding_Result)">
+          <Parameter Name="ProdID" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="Bidding_Result">
+          <Property Type="Int32" Name="p_id" Nullable="false" />
+          <Property Type="Int32" Name="high_bid" Nullable="true" />
+          <Property Type="Int32" Name="base_price" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectModelStoreContainer" CdmEntityContainer="ProjectEntities3">
+    <EntitySetMapping Name="aution_table">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectModel.aution_table)">
+        <MappingFragment StoreEntitySet="aution_table">
+          <ScalarProperty Name="auc_id" ColumnName="auc_id" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="product_p_id" ColumnName="product_p_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bid_table">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectModel.bid_table)">
+        <MappingFragment StoreEntitySet="bid_table">
+          <ScalarProperty Name="bid_id" ColumnName="bid_id" />
+          <ScalarProperty Name="usr_id" ColumnName="usr_id" />
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="user_bid_price" ColumnName="user_bid_price" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectModel.product)">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="p_name" ColumnName="p_name" />
+          <ScalarProperty Name="p_descp" ColumnName="p_descp" />
+          <ScalarProperty Name="p_size" ColumnName="p_size" />
+          <ScalarProperty Name="p_weight" ColumnName="p_weight" />
+          <ScalarProperty Name="p_material" ColumnName="p_material" />
+          <ScalarProperty Name="p_imgloc" ColumnName="p_imgloc" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="p_category" ColumnName="p_category" />
+          <ScalarProperty Name="usr_id" ColumnName="usr_id" />
+          <ScalarProperty Name="base_price" ColumnName="base_price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_db">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectModel.user_db)">
+        <MappingFragment StoreEntitySet="user_db">
+          <ScalarProperty Name="usr_id" ColumnName="usr_id" />
+          <ScalarProperty Name="f_name" ColumnName="f_name" />
+          <ScalarProperty Name="l_name" ColumnName="l_name" />
+          <ScalarProperty Name="pass_w" ColumnName="pass_w" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="usraddress" ColumnName="usraddress" />
+          <ScalarProperty Name="pincode" ColumnName="pincode" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="statex" ColumnName="statex" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="created_At" ColumnName="created_At" />
+          <ScalarProperty Name="x" ColumnName="x" />
+          <ScalarProperty Name="y" ColumnName="y" />
+          <ScalarProperty Name="z" ColumnName="z" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

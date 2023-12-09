@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style/intxt.css" />
+    <link rel="stylesheet" href="style/myDiv.css" />
+    <link rel="stylesheet" href="style/tdMenu.css" />
+    <link rel="stylesheet" href="style/font.css" />
+    <style>
+      @font-face {
+        font-family: myFontx;
+        src: url(Font/natraj.ttf);
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="mydiv">
+        <form action="">
+          <table>
+            <tr>
+              <td colspan="2">
+                <center>
+                  <h1 class="headx">Registration</h1>
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <center>
+                  <img src="images/natraj123.png" width="300" height="300" />
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <center>
+                  <h1 class="minhead">Timeless Treasure</h1>
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td class="myTD">
+                <label for="f_name" class="myLab">First Name</label>
+                <input
+                  type="text"
+                  id="txtFname"
+                  placeholder="Enter First Name"
+                />
+              </td>
+
+              <td class="myTD">
+                <label for="l_name" class="myLab">Last Name</label>
+                <input
+                  type="text"
+                  id="txtLname"
+                  placeholder="Enter Last Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="mydiv2" id="divFname" style="color: red"></div>
+              </td>
+              <td>
+                <div class="mydiv2" id="divLname" style="color: red"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="myTD">
+                <label for="u_name" class="myLab">Username</label>
+                <input type="text" id="txtUsrName" />
+              </td>
+              <td class="myTD">
+                <label for="email" class="myLab">Email</label>
+                <input
+                  type="email"
+                  id="emailAdd"
+                  placeholder="Enter Email Address"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="mydiv2" id="divUname" style="color: red"></div>
+              </td>
+
+              <td>
+                <div class="mydiv2" id="divEmail" style="color: red"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="myTD">
+                <label for="mobile" class="myLab">Mobile</label>
+                <input
+                  type="number"
+                  id="mobileNo"
+                  placeholder="Enter Mobile Number"
+                />
+              </td>
+              <td class="myTD">
+                <label for="city" class="myLab">City</label>
+                <input type="text" id="txtCity" placeholder="Enter City" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="mydiv2" id="divMobile" style="color: red"></div>
+              </td>
+              <td>
+                <div class="mydiv2" id="divCity" style="color: red"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="myTD">
+                <label for="state" class="myLab">State</label>
+                <input type="text" id="txtState" placeholder="Enter State" />
+              </td>
+              <td class="myTD">
+                <label for="country" class="myLab">Country</label>
+                <input
+                  type="text"
+                  id="txtCountry"
+                  placeholder="Enter Country"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="mydiv2" id="divState" style="color: red"></div>
+              </td>
+              <td>
+                <div class="mydiv2" id="divCountry" style="color: red"></div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="myTD">
+                <label for="address" class="myLab">Address</label>
+                <textarea
+                  class="txtarea"
+                  id="w3review"
+                  name="w3review"
+                  rows="3"
+                  placeholder="Enter Address"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="mydiv2" id="divAddress" style="color: red"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="myTD">
+                <label for="pin" class="myLab">Pincode</label>
+                <input type="number" id="numPin" placeholder="Enter Pincode" />
+              </td>
+              <td class="myTD">
+                <label for="password" class="myLab">Password</label>
+                <input type="password" id="pswd" placeholder="Enter Password" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="mydiv2" id="divPin" style="color: red"></div>
+              </td>
+              <td>
+                <div class="mydiv2" id="divPassword" style="color: red"></div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="1">
+                <center>
+                  <input
+                    type="button"
+                    value="SUBMIT"
+                    onclick="DoRegister()"
+                    style="margin-left: 150px"
+                  />
+                </center>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </center>
+    <script src="validation.js"></script>
+    <script>
+      function DoRegister() {
+        debugger;
+        validate("txtFname", "divFname", "First Name is required");
+        validate("txtLname", "divLname", "Last Name is required");
+        validate("emailAdd", "divEmail", "Email Address is required");
+        validate("mobileNo", "divMobile", "Mobile No is required");
+        validate("txtCity", "divCity", "City Name is required");
+        validate("txtState", "divState", "State Name is required");
+        validate("txtCountry", "divCountry", "Country Name is required");
+        validate("w3review", "divAddress", "Address is required");
+        validate("numPin", "divPin", "Pincode is required");
+        validate("pswd", "divPassword", "Password is required");
+      }
+    </script>
+  </body>
+</html>
